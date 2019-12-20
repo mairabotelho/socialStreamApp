@@ -31,9 +31,9 @@ public class CommentService {
        return comment1;
     }
 
-    public Iterable<String> getAllByVideoId(Long videoId){
-
-        return repository.findAllByVideoId(videoId);
-    }
+//    public Iterable<String> getAllByVideoId(Long videoId){
+//
+//        return repository.findAllByVideoId(videoId);
+//    }
 
 }

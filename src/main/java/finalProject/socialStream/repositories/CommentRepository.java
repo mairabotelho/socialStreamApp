@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CommentRepository extends CrudRepository<Comment, Long> {
 
-    Comment findAllByUserId(Long userId);
-
-    Comment addByVideoId(Long videoId);
-
-    Iterable<String> findAllByVideoId(Long videoId);
+//    Comment findAllByUserId(Long userId);
+//
+//    Comment addByVideoId(Long videoId);
+//
+//    Iterable<String> findAllByVideoId(Long videoId);
 }
