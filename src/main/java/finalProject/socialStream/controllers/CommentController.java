@@ -25,8 +25,8 @@ public class CommentController {
         return new ResponseEntity<>(commentService.addCommentToVideo(comment, videoId, userId), HttpStatus.CREATED);
     }
 
-    @GetMapping("/video/{videoId}")
-    public  ResponseEntity<Iterable<String>> getAllCommentsFromVideo(@PathVariable Long videoId){
-        return new ResponseEntity<>(commentService.getAllByVideoId(videoId), HttpStatus.OK);
-    }
+//    @GetMapping("/video/{videoId}")
+//    public  ResponseEntity<Iterable<String>> getAllCommentsFromVideo(@PathVariable Long videoId){
+//        return new ResponseEntity<>(commentService.getAllByVideoId(videoId), HttpStatus.OK);
+//    }
 }
