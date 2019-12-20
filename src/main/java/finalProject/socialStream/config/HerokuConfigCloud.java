@@ -18,8 +18,7 @@ public class HerokuConfigCloud {
     private static final Logger logger = Logger.getLogger(String.valueOf(HerokuConfigCloud.class));
 
     @Bean()
-//@Primary this annotation to be used if more than one DB Config was used.  In that case,
-// using @Primary would give precedence to a the particular "primary" config class
+
     @Profile("heroku")
     public DataSource dataSource(
             @Value("${spring.datasource.driverClassName}") final String driverClass,
@@ -27,7 +26,6 @@ public class HerokuConfigCloud {
             @Value("${spring.datasource.username}") final String username,
             @Value("${spring.datasource.password}") final String password
     ) throws URISyntaxException {
-
 
         return DataSourceBuilder
                 .create()
