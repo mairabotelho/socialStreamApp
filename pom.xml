@@ -58,6 +58,11 @@
 		<artifactId>postgresql</artifactId>
 		<version>9.4-1205-jdbc42</version>
 	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-hikaricp</artifactId>
+		<version>5.2.4.Final</version>
+	</dependency>
 </dependencies>
 
 <build>
